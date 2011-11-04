@@ -121,6 +121,7 @@ from a PSTricks diagram.
 %doc %{_texmfdistdir}/doc/generic/pstricks/pstricks-doc.pdf
 %doc %{_texmfdistdir}/doc/generic/pstricks/test-pst.pdf
 %doc %{_texmfdistdir}/doc/generic/pstricks/test-pst.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -131,3 +132,5 @@ from a PSTricks diagram.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
