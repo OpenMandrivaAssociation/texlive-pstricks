@@ -1,4 +1,4 @@
-# revision 24476
+# revision 24695
 # category Package
 # catalog-ctan /graphics/pstricks/base
 # catalog-date 2011-09-27 11:06:33 +0200
@@ -6,7 +6,7 @@
 # catalog-version 2.23
 Name:		texlive-pstricks
 Version:	2.23
-Release:	2
+Release:	3
 Summary:	PostScript macros for TeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/base
@@ -17,8 +17,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 An extensive collection of macros for generating PostScript
@@ -36,19 +34,19 @@ pst-pdf or the pdftricks package, to generate a PDF inclusion
 from a PSTricks diagram.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
