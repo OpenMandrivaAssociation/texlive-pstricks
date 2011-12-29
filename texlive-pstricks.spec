@@ -33,16 +33,8 @@ PDF(La)TeX. This limitation may be overcome by using either the
 pst-pdf or the pdftricks package, to generate a PDF inclusion
 from a PSTricks diagram.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -120,7 +112,6 @@ from a PSTricks diagram.
 %doc %{_texmfdistdir}/doc/generic/pstricks/pstricks-doc.pdf
 %doc %{_texmfdistdir}/doc/generic/pstricks/test-pst.pdf
 %doc %{_texmfdistdir}/doc/generic/pstricks/test-pst.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -131,5 +122,3 @@ from a PSTricks diagram.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
