@@ -1,4 +1,4 @@
-# revision 24695
+# revision 24996
 # category Package
 # catalog-ctan /graphics/pstricks/base
 # catalog-date 2011-09-27 11:06:33 +0200
@@ -6,7 +6,7 @@
 # catalog-version 2.23
 Name:		texlive-pstricks
 Version:	2.23
-Release:	4
+Release:	5
 Summary:	PostScript macros for TeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/base
@@ -95,6 +95,8 @@ from a PSTricks diagram.
 %doc %{_texmfdistdir}/doc/generic/pstricks/pst-news10.tex
 %doc %{_texmfdistdir}/doc/generic/pstricks/pst-news11.pdf
 %doc %{_texmfdistdir}/doc/generic/pstricks/pst-news11.tex
+%doc %{_texmfdistdir}/doc/generic/pstricks/pst-news12.pdf
+%doc %{_texmfdistdir}/doc/generic/pstricks/pst-news12.tex
 %doc %{_texmfdistdir}/doc/generic/pstricks/pst-quickref.pdf
 %doc %{_texmfdistdir}/doc/generic/pstricks/pst-user.pdf
 %doc %{_texmfdistdir}/doc/generic/pstricks/pst-user.tgz
