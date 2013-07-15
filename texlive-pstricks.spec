@@ -1,11 +1,11 @@
-# revision 26865
+# revision 27985
 # category Package
 # catalog-ctan /graphics/pstricks/base
-# catalog-date 2012-06-05 22:32:50 +0200
+# catalog-date 2012-09-24 17:14:10 +0200
 # catalog-license lppl1.3
-# catalog-version 2.29
+# catalog-version 2.33
 Name:		texlive-pstricks
-Version:	2.29
+Version:	2.33
 Release:	1
 Summary:	PostScript macros for TeX
 Group:		Publishing
@@ -46,7 +46,6 @@ from a PSTricks diagram.
 %{_texmfdistdir}/dvips/pstricks/pst-algparser.pro
 %{_texmfdistdir}/dvips/pstricks/pst-dots.pro
 %{_texmfdistdir}/dvips/pstricks/pst-dots97.pro
-%{_texmfdistdir}/dvips/pstricks/pst-tools.pro
 %{_texmfdistdir}/dvips/pstricks/pstricks.pro
 %{_texmfdistdir}/dvips/pstricks/pstricks97.pro
 %{_texmfdistdir}/tex/generic/pstricks/config/Changes
@@ -54,6 +53,7 @@ from a PSTricks diagram.
 %{_texmfdistdir}/tex/generic/pstricks/config/distiller.cfg
 %{_texmfdistdir}/tex/generic/pstricks/config/dvips.cfg
 %{_texmfdistdir}/tex/generic/pstricks/config/dvipsone.cfg
+%{_texmfdistdir}/tex/generic/pstricks/config/gastex.cfg
 %{_texmfdistdir}/tex/generic/pstricks/config/textures.cfg
 %{_texmfdistdir}/tex/generic/pstricks/config/vtex.cfg
 %{_texmfdistdir}/tex/generic/pstricks/config/xdvipdfmx.cfg
@@ -64,6 +64,7 @@ from a PSTricks diagram.
 %{_texmfdistdir}/tex/generic/pstricks/pstricks.tex
 %{_texmfdistdir}/tex/generic/pstricks/pstricks97.tex
 %{_texmfdistdir}/tex/latex/pstricks/pst-all.sty
+%{_texmfdistdir}/tex/latex/pstricks/pst-doc.cls
 %{_texmfdistdir}/tex/latex/pstricks/pst-key.sty
 %{_texmfdistdir}/tex/latex/pstricks/pstcol.sty
 %{_texmfdistdir}/tex/latex/pstricks/pstricks.sty
@@ -78,7 +79,6 @@ from a PSTricks diagram.
 %doc %{_texmfdistdir}/doc/generic/pstricks/images/flowers.eps
 %doc %{_texmfdistdir}/doc/generic/pstricks/images/tiger.eps
 %doc %{_texmfdistdir}/doc/generic/pstricks/images/tiger.pdf
-%doc %{_texmfdistdir}/doc/generic/pstricks/pst-doc.cls
 %doc %{_texmfdistdir}/doc/generic/pstricks/pst-doc.ist
 %doc %{_texmfdistdir}/doc/generic/pstricks/pst-doc.pdf
 %doc %{_texmfdistdir}/doc/generic/pstricks/pst-news.sty
@@ -127,6 +127,10 @@ cp -fpar dvips tex doc %{buildroot}%{_texmfdistdir}
 
 
 %changelog
+* Tue Oct 30 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.33-1
++ Revision: 820784
+- Update to latest release.
+
 * Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.29-1
 + Revision: 812810
 - Update to latest release.
