@@ -1,11 +1,11 @@
-# revision 27985
+# revision 31493
 # category Package
 # catalog-ctan /graphics/pstricks/base
-# catalog-date 2012-09-24 17:14:10 +0200
+# catalog-date 2013-08-20 22:58:44 +0200
 # catalog-license lppl1.3
-# catalog-version 2.33
+# catalog-version 2.46
 Name:		texlive-pstricks
-Version:	2.33
+Version:	2.46
 Release:	1
 Summary:	PostScript macros for TeX
 Group:		Publishing
@@ -19,19 +19,23 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-An extensive collection of macros for generating PostScript
-that is usable with most TeX macro formats, including Plain
-TeX, LaTeX, AMS-TeX, and AMS-LaTeX. Included are macros for
-colour, graphics, pie charts, rotation, trees and overlays. It
-has many special features, including a wide variety of graphics
-(picture drawing) macros, with a flexible interface and with
-colour support. There are macros for colouring or shading the
-cells of tables. The package pstricks-add contains bug-fixes
-and additions for pstricks (among other things). PSTricks uses
-PostScript \special commands, which are not supported by
-PDF(La)TeX. This limitation may be overcome by using either the
-pst-pdf or the pdftricks package, to generate a PDF inclusion
-from a PSTricks diagram.
+PStricks offers an extensive collection of macros for
+generating PostScript that is usable with most TeX macro
+formats, including Plain TeX, LaTeX, AMS-TeX, and AMS-LaTeX.
+Included are macros for colour, graphics, pie charts, rotation,
+trees and overlays. It has many special features, including a
+wide variety of graphics (picture drawing) macros, with a
+flexible interface and with colour support. There are macros
+for colouring or shading the cells of tables. The package
+pstricks-add contains bug-fixes and additions for pstricks
+(among other things). PSTricks uses PostScript \special
+commands, which are not supported by PDF(La)TeX. This
+limitation may be overcome by using either the pst-pdf or the
+pdftricks package, to generate a PDF inclusion from a PSTricks
+diagram. Note that this is one of a pair of catalogue entries
+for PSTricks; the other one (PSTricks) is acting as a "stub",
+while editorial work on catalogue entries for PSTricks
+contributed is completed.
 
 %post
     %{_sbindir}/texlive.post
@@ -46,6 +50,7 @@ from a PSTricks diagram.
 %{_texmfdistdir}/dvips/pstricks/pst-algparser.pro
 %{_texmfdistdir}/dvips/pstricks/pst-dots.pro
 %{_texmfdistdir}/dvips/pstricks/pst-dots97.pro
+%{_texmfdistdir}/dvips/pstricks/pst-ovl.pro
 %{_texmfdistdir}/dvips/pstricks/pstricks.pro
 %{_texmfdistdir}/dvips/pstricks/pstricks97.pro
 %{_texmfdistdir}/tex/generic/pstricks/config/Changes
@@ -59,6 +64,7 @@ from a PSTricks diagram.
 %{_texmfdistdir}/tex/generic/pstricks/config/xdvipdfmx.cfg
 %{_texmfdistdir}/tex/generic/pstricks/pst-fp.tex
 %{_texmfdistdir}/tex/generic/pstricks/pst-key.tex
+%{_texmfdistdir}/tex/generic/pstricks/pst-ovl.tex
 %{_texmfdistdir}/tex/generic/pstricks/pstPlain.tex
 %{_texmfdistdir}/tex/generic/pstricks/pstricks.con
 %{_texmfdistdir}/tex/generic/pstricks/pstricks.tex
@@ -66,6 +72,7 @@ from a PSTricks diagram.
 %{_texmfdistdir}/tex/latex/pstricks/pst-all.sty
 %{_texmfdistdir}/tex/latex/pstricks/pst-doc.cls
 %{_texmfdistdir}/tex/latex/pstricks/pst-key.sty
+%{_texmfdistdir}/tex/latex/pstricks/pst-ovl.sty
 %{_texmfdistdir}/tex/latex/pstricks/pstcol.sty
 %{_texmfdistdir}/tex/latex/pstricks/pstricks.sty
 %doc %{_texmfdistdir}/doc/generic/pstricks/Changes
@@ -97,6 +104,8 @@ from a PSTricks diagram.
 %doc %{_texmfdistdir}/doc/generic/pstricks/pst-news11.tex
 %doc %{_texmfdistdir}/doc/generic/pstricks/pst-news12.pdf
 %doc %{_texmfdistdir}/doc/generic/pstricks/pst-news12.tex
+%doc %{_texmfdistdir}/doc/generic/pstricks/pst-news13.pdf
+%doc %{_texmfdistdir}/doc/generic/pstricks/pst-news13.tex
 %doc %{_texmfdistdir}/doc/generic/pstricks/pst-quickref.pdf
 %doc %{_texmfdistdir}/doc/generic/pstricks/pst-user.pdf
 %doc %{_texmfdistdir}/doc/generic/pstricks/pst-user.tgz
@@ -124,45 +133,3 @@ from a PSTricks diagram.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Oct 30 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.33-1
-+ Revision: 820784
-- Update to latest release.
-
-* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.29-1
-+ Revision: 812810
-- Update to latest release.
-
-* Tue Mar 27 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.24-2
-+ Revision: 787735
-- Update to latest release.
-
-* Thu Feb 23 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.24-1
-+ Revision: 779650
-- Update to latest release.
-
-* Mon Jan 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.23-5
-+ Revision: 759032
-- Update to latest upstream release
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.23-4
-+ Revision: 755403
-- Rebuild to reduce used resources
-
-* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.23-3
-+ Revision: 739872
-- texlive-pstricks
-
-* Thu Nov 10 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.23-2
-+ Revision: 729693
-- texlive-pstricks
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.23-1
-+ Revision: 719384
-- texlive-pstricks
-- texlive-pstricks
-- texlive-pstricks
-- texlive-pstricks
-
