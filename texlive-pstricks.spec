@@ -1,11 +1,11 @@
-# revision 31493
+# revision 32254
 # category Package
 # catalog-ctan /graphics/pstricks/base
-# catalog-date 2013-08-20 22:58:44 +0200
+# catalog-date 2013-11-27 08:19:46 +0100
 # catalog-license lppl1.3
-# catalog-version 2.46
+# catalog-version 2.47
 Name:		texlive-pstricks
-Version:	2.46
+Version:	2.47
 Release:	1
 Summary:	PostScript macros for TeX
 Group:		Publishing
@@ -54,7 +54,7 @@ contributed is completed.
 %{_texmfdistdir}/dvips/pstricks/pstricks.pro
 %{_texmfdistdir}/dvips/pstricks/pstricks97.pro
 %{_texmfdistdir}/tex/generic/pstricks/config/Changes
-%{_texmfdistdir}/tex/generic/pstricks/config/README
+%{_texmfdistdir}/tex/generic/pstricks/config/README.cfg
 %{_texmfdistdir}/tex/generic/pstricks/config/distiller.cfg
 %{_texmfdistdir}/tex/generic/pstricks/config/dvips.cfg
 %{_texmfdistdir}/tex/generic/pstricks/config/dvipsone.cfg
@@ -79,7 +79,6 @@ contributed is completed.
 %doc %{_texmfdistdir}/doc/generic/pstricks/Changes.dvips
 %doc %{_texmfdistdir}/doc/generic/pstricks/Changes.generic
 %doc %{_texmfdistdir}/doc/generic/pstricks/Changes.latex
-%doc %{_texmfdistdir}/doc/generic/pstricks/Makefile
 %doc %{_texmfdistdir}/doc/generic/pstricks/PSTricks.bib
 %doc %{_texmfdistdir}/doc/generic/pstricks/README
 %doc %{_texmfdistdir}/doc/generic/pstricks/ctandir.sty
@@ -106,19 +105,8 @@ contributed is completed.
 %doc %{_texmfdistdir}/doc/generic/pstricks/pst-news12.tex
 %doc %{_texmfdistdir}/doc/generic/pstricks/pst-news13.pdf
 %doc %{_texmfdistdir}/doc/generic/pstricks/pst-news13.tex
-%doc %{_texmfdistdir}/doc/generic/pstricks/pst-quickref.pdf
 %doc %{_texmfdistdir}/doc/generic/pstricks/pst-user.pdf
 %doc %{_texmfdistdir}/doc/generic/pstricks/pst-user.tgz
-%doc %{_texmfdistdir}/doc/generic/pstricks/pst-usrfull.pdf
-%doc %{_texmfdistdir}/doc/generic/pstricks/pstnews1-10.pdf
-%doc %{_texmfdistdir}/doc/generic/pstricks/pstnews1-10.tex
-%doc %{_texmfdistdir}/doc/generic/pstricks/pstnews1-11.pdf
-%doc %{_texmfdistdir}/doc/generic/pstricks/pstnews1-11.tex
-%doc %{_texmfdistdir}/doc/generic/pstricks/pstnews1-12.pdf
-%doc %{_texmfdistdir}/doc/generic/pstricks/pstnews1-12.tex
-%doc %{_texmfdistdir}/doc/generic/pstricks/pstnews97-15.pdf
-%doc %{_texmfdistdir}/doc/generic/pstricks/pstnews97-15.tex
-%doc %{_texmfdistdir}/doc/generic/pstricks/pstricks-add-data9.data
 %doc %{_texmfdistdir}/doc/generic/pstricks/pstricks-bug.tex
 %doc %{_texmfdistdir}/doc/generic/pstricks/pstricks-doc.pdf
 %doc %{_texmfdistdir}/doc/generic/pstricks/test-pst.pdf
