@@ -1,12 +1,12 @@
-# revision 33160
+# revision 34155
 # category Package
 # catalog-ctan /graphics/pstricks/base
-# catalog-date 2014-03-12 18:21:01 +0100
+# catalog-date 2014-05-20 11:23:08 +0200
 # catalog-license lppl
-# catalog-version 2.53
+# catalog-version 2.54a
 Name:		texlive-pstricks
-Version:	2.53
-Release:	2
+Version:	2.54a
+Release:	1
 Summary:	PostScript macros for TeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/base
