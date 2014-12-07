@@ -6,7 +6,7 @@
 # catalog-version 2.54a
 Name:		texlive-pstricks
 Version:	2.54a
-Release:	2
+Release:	3
 Summary:	PostScript macros for TeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/base
