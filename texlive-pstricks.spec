@@ -1,6 +1,6 @@
 Name:		texlive-pstricks
-Version:	65346
-Release:	2
+Version:	66973
+Release:	1
 Summary:	PostScript macros for TeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/base
