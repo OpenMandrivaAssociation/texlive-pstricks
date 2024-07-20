@@ -1,5 +1,5 @@
 Name:		texlive-pstricks
-Version:	69674
+Version:	71752
 Release:	1
 Summary:	PostScript macros for TeX
 Group:		Publishing
