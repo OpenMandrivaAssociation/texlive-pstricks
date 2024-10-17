@@ -3,7 +3,7 @@ Version:	71883
 Release:	1
 Summary:	PostScript macros for TeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pstricks/base
+URL:		https://www.ctan.org/tex-archive/graphics/pstricks/base
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pstricks.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pstricks.doc.r%{version}.tar.xz
